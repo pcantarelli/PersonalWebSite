@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <style>
+      body,
+      html {
+         height: 100%;
+         margin: 0;
+         font: 400 15px/1.8 "Lato", sans-serif;
+         color: #777;
+      }
+      
+      .container1 {
+         max-width: 70%;
+      }
+
+      .container2 {
+         display: flex;
+         flex-direction: column;
+      }
+      
+      .container3 {
+         display: flex;
+         flex-direction: row;
+         flex-wrap: wrap;
+         max-height: 500px;
+
+      }
+
+      .description {
+         flex-grow: 2;
+         flex-shrink: 1;
+         background-color: #2b9c5a;
+         border: solid;
+
+      }
+      
+      .thumb {
+         flex-grow: 1;
+         flex-shrink: 1;
+         background-color: brown;
+         border: solid;
+      }
+
+      #thumb1 {
+         background-image: url(byronatbyron.jpg)
+      }
+
+      #thumb2 {
+         background-image: url(peugeot.jpg)
+      }
+
+      #thumb3 {
+         background-image: url(honda.jpg)
+      }
+
+
+      .bgimg-1 {
+         position: relative;
+         opacity: 0.65;
+         background-attachment: fixed;
+         background-position: left;
+         background-repeat: no-repeat;
+         background-size: cover;
+         background-image: url("pic1.jpg");
+         min-height: 100%;
+      }
+
+      .caption {
+         position: absolute;
+         left: 0;
+         top: 50%;
+         width: 100%;
+         text-align: center;
+         color: #000;
+      }
+
+      .caption span.border {
+         background-color: #111;
+         color: #fff;
+         padding: 18px;
+         letter-spacing: 5px;
+         font: 30px "Lato", sans-serif;
+      }
+
+      h3 {
+         letter-spacing: 5px;
+         text-transform: uppercase;
+         font: 20px "Lato", sans-serif;
+         color: #111;
+      }
+
+      /* Turn off parallax scrolling for tablets and phones */
+      @media only screen and (max-device-width: 1024px) {
+         .bgimg-1 {
+            background-attachment: scroll;
+         }
+      }
+      .container1 {
+         width: 100%;
+         padding: 50px 0;
+         margin: 50px auto;
+         position: relative;
+         overflow: hidden;
+         border: solid 1px;
+      }
+      /*CSS time line*/
+      * {
+         -webkit-box-sizing: border-box;
+         -moz-box-sizing: border-box;
+         box-sizing: border-box;
+         outline: none;
+      }
+
+      body {
+         margin: 0;
+         padding: 30px 0;
+         font-family: 'Roboto', sans-serif;
+         background: #F1F2F6;
+      }
+
+      h1 {
+         text-align: center;
+         font-weight: 300;
+         color: #777
+      }
+
+      h1 span {
+         font-weight: 600;
+      }
+
+      .container {
+         width: 80%;
+         padding: 50px 0;
+         margin: 50px auto;
+         position: relative;
+         overflow: hidden;
+      }
+
+      .container:before {
+         content: '';
+         position: absolute;
+         top: 0;
+         left: 50%;
+         margin-left: -1px;
+         width: 2px;
+         height: 100%;
+         background: #CCD1D9;
+         z-index: 1
+      }
+
+      .timeline-block {
+         width: -webkit-calc(50% + 8px);
+         width: -moz-calc(50% + 8px);
+         width: calc(50% + 8px);
+         display: -webkit-box;
+         display: -webkit-flex;
+         display: -moz-box;
+         display: flex;
+         -webkit-box-pack: justify;
+         -webkit-justify-content: space-between;
+         -moz-box-pack: justify;
+         justify-content: space-between;
+         clear: both;
+      }
+
+      .timeline-block-right {
+         float: right;
+      }
+
+      .timeline-block-left {
+         float: left;
+         direction: rtl
+      }
+
+      .marker {
+         width: 16px;
+         height: 16px;
+         border-radius: 50%;
+         border: 2px solid #F5F7FA;
+         background: #2b9c5a;
+         margin-top: 10px;
+         z-index: 9999
+      }
+
+      .timeline-content {
+         width: 95%;
+         padding: 0 15px;
+         color: #666;
+         text-align:start;
+      }
+
+      .timeline-content h3 {
+         margin-top: 5px;
+         margin-bottom: 5px;
+         font-size: 17px;
+         font-weight: bold;
+      }
+
+      .timeline-content span {
+         font-size: 15px;
+         color: #666;
+         font-weight: bold;
+      }
+
+      .timeline-content a {
+         font-size: 15px;
+         color: #000;
+         text-decoration: none;
+      }
+
+      .timeline-content p {
+         font-size: 14px;
+         line-height: 0.5em;
+         word-spacing: 1px;
+         color: #888;
+      }
+
+
+      @media screen and (max-width: 768px) {
+         .container:before {
+            left: 8px;
+            width: 2px;
+         }
+
+         .timeline-block {
+            width: 100%;
+            margin-bottom: 30px;
+         }
+
+         .timeline-block-right {
+            float: none;
+         }
+
+         .timeline-block-left {
+            float: none;
+            direction: ltr;
+         }
+      }
+   </style>
+</head>
+
+<body>
+   <div class="bgimg-1">
+      <div class="caption">
+         <span class="border" style="background-color: transparent">Hi, looking for me?</span>
+      </div>
+   </div>
+
+   <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+      <h3 style="text-align:center;">Who is this guy?</h3>
+      <p class="container1"> Born in Brazil and graduated in Industrial Engineering, I worked 8 years in the Automotive
+         Industry mainly with Sales and Management.
+         <br>
+         <br> Coaching my team, we built long-lasting customer relationships, improved our sales process and achieved
+         customer satisfaction and sales targets that I'm very proud.
+
+         After achieved many of my professional goals, I decided to move to another country and invest some time on me.
+         <br>
+         <br> I studied in Australia for 4 year to improve my Managing Skills and now moved to Ireland due to my dual
+         citizenship (Brazilian and Italian) to focus again on my career.</p>
+   </div>
+
+   <div style="color: #777;background-color:rgba(229, 226, 226, 0.795);text-align:center;padding:50px 80px;text-align: justify;">
+      <h3 style="text-align:center;">Where have him being?</h3>
+      <div class="container1">
+         <section class="container3">
+            <div class="thumb" id="thumb1"> foto</div>
+            <div class="description">
+               <h4>Byron at Byron Resort and Spa</h4>
+               <p></p>
+            </div>
+         </section>
+         <section class="container3">
+            <div class="thumb" id="thumb2"> foto</div>
+            <div class="description">
+               <h4>Byron at Byron Resort and Spa</h4>
+               <p></p>
+            </div>
+         </section>    
+         <section class="container3">
+            <div class="thumb" id="thumb3"> foto</div>
+            <div class="description">
+               <h4>Byron at Byron Resort and Spa</h4>
+               <p></p>
+            </div>
+         </section>        
+      </div>
+   </div>
+
+   <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+      <h3 style="text-align:center;">When he learned that?</h3>
+         <div class="container1">
+         <div class="timeline-block timeline-block-right">
+            <div class="marker"></div>
+            <div class="timeline-content">
+               <h3>2015</h3>
+               <span>Bachelors in Industrial Engineering</span>
+               <a href="https://portal.fei.edu.br/"><br>FEI University</a>
+               <p>São Paulo, Brazil</p>
+            </div>
+         </div>
+
+         <div class="timeline-block timeline-block-left">
+            <div class="marker"></div>
+            <div class="timeline-content">
+               <h3>2016</h3>
+               <span>Diploma of Leadership and Management</span>
+               <a href="https://envirotech.edu.au/"><br>Envirotech</a>
+               <p>Byron Bay, Australia</p>
+            </div>
+         </div>
+
+         <div class="timeline-block timeline-block-right">
+            <div class="marker"></div>
+            <div class="timeline-content">
+               <h3>2017</h3>
+               <span>Diploma of Project Management</span>
+               <a href="https://envirotech.edu.au/"><br>Envirotech</a>
+               <p>Gold Coast, Australia</p>
+            </div>
+         </div>
+
+         <div class="timeline-block timeline-block-left">
+            <div class="marker"></div>
+            <div class="timeline-content">
+               <h3>2018</h3>
+               <span>Advanced Diploma of Leadership and Management</span>
+               <a href="https://envirotech.edu.au/"><br>Envirotech</a>
+               <p>Gold Coast, Australia</p>
+            </div>
+         </div>
+         </div>
+      </div>
+   </div>
+
+   <div
+      style="color: #777;background-color: rgba(229, 226, 226, 0.795);text-align:center;padding:50px 80px;text-align: justify;">
+      <h3 style="text-align:center;">What he belives?</h3>
+      <p> Lista de palavras chaves e links do que eu acredito
+
+      </p>
+   </div>
+
+
+
+   <div class="bgimg-1">
+      <div class="caption">
+         <span class="border" style=background-color:transparent;>Why am I waiting to contatc him?</span>
+      </div>
+   </div>
+
+</body>
+
+</html>
