@@ -9,7 +9,7 @@
          height: 100%;
          margin: 0;
          font: 400 15px/1.8 "Lato", sans-serif;
-         color: #777;
+         color: white;
       }
 
       .bgimg-1 {
@@ -45,22 +45,84 @@
          text-transform: uppercase;
          font: 20px "Lato", sans-serif;
          color: #111;
+         margin-bottom:30px;
       }
 
-      /* Turn off parallax scrolling for tablets and phones */
-      @media only screen and (max-device-width: 1024px) {
-         .bgimg-1 {
-            background-attachment: scroll;
-         }
-      }
-      .container1 {
+      img {
+         display: block;
+         max-width: 100%;
          width: 100%;
-         padding: 50px 0;
-         margin: 50px auto;
-         position: relative;
-         overflow: hidden;
-         border: solid 1px;
+         border-radius: 20px;
+         margin-bottom: 10px;
+         margin-top: 20px;
       }
+
+      article {
+        display: block;
+        max-width: 100%;
+        width: auto;
+        padding: 0px;
+        margin-bottom: 25px;
+        margin-top: 20px;
+
+      }
+
+      article h2 {
+          padding: 0px;
+          margin: 0px
+          
+      }
+      article p {
+          padding: 0px;
+          margin: 0px 0px 10px ;
+      }
+
+    
+
+      .containermaster {
+         margin: 0 auto 0 auto ;
+      }
+
+
+      @media only screen and (min-width: 768px) {
+
+         .containermaster {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto 0 auto;
+         }
+
+         div.line {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            height: 220px;
+            margin: 0 auto 0 auto;
+            padding: 0px;
+         }
+
+         img {
+            height: 200px;
+            width: 40%;
+            object-fit: cover;
+
+         }
+
+         article {
+            height: 200px;
+            background-color: #2bc5a;
+            text-align: justify;
+            border: solid #00000;
+            padding: 0px 10px;
+
+         }
+
+
+
+      }
+
+
       /*CSS time line*/
       * {
          -webkit-box-sizing: border-box;
@@ -144,7 +206,7 @@
          width: 95%;
          padding: 0 15px;
          color: #666;
-         text-align:start;
+         text-align: start;
       }
 
       .timeline-content h3 {
@@ -173,7 +235,6 @@
          color: #888;
       }
 
-
       @media screen and (max-width: 768px) {
          .container:before {
             left: 8px;
@@ -194,6 +255,12 @@
             direction: ltr;
          }
       }
+      /* Turn off parallax scrolling for tablets and phones */
+      @media only screen and (max-device-width: 1024px) {
+         .bgimg-1 {
+            background-attachment: scroll;
+         }
+      }
    </style>
 </head>
 
@@ -204,9 +271,10 @@
       </div>
    </div>
 
-   <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+   <div style="color: #777;background-color:white;text-align:center;padding:30px 30px 30px 30px;text-align: justify;">
       <h3 style="text-align:center;">Who is this guy?</h3>
-      <p class="containermaster"> Born in Brazil and graduated in Industrial Engineering, I worked 8 years in the Automotive
+      <p class="containermaster"> Born in Brazil and graduated in Industrial Engineering, I worked 8 years in the
+         Automotive
          Industry mainly with Sales and Management.
          <br>
          <br> Coaching my team, we built long-lasting customer relationships, improved our sales process and achieved
@@ -218,26 +286,55 @@
          citizenship (Brazilian and Italian) to focus again on my career.</p>
    </div>
 
-   <div  style=" color: #777;background-color:rgba(229, 226, 226, 0.795);text-align:center;padding:50px 80px;text-align: justify;">
+   <div
+      style=" color: #777;background-color:rgba(229, 226, 226, 0.795);text-align:center;padding:30px 30px 30px 30px;text-align: justify;">
       <h3 style="text-align:center;">Where have him being?</h3>
       <div class="containermaster">
-         <div class="box" style="border-style: solid"> foto</div>
-         <div class="box" style="border-style: solid">
-            <h4>Byron at Byron Resort and Spa</h4>
-            <p></p>
-         </div>
          <div>
-            <h4>Peugeot AR Motors - Group 1</h4>
-            <p></p>
+            <div class="columm">
+               <div class="line">
+                  <img src="byronatbyron.jpg" alt="peugeot">
+                  <article>
+                     <h2>Peugeot AR Motors - Group 1</h2>
+                     <p>Mussum Ipsum, cacilds vidis litro abertis. Si num tem leite então bota uma pinga aí cumpadi! Nec
+                        orci
+                        ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis. Leite de
+                        capivaris, leite de
+                        mula manquis sem cabeça. Manduma pindureta quium dia nois paga.</p>
+                  </article>
+               </div>
+               <div class="line">
+                  <img src="peugeot.jpg" alt="peugeot">
+                  <article>
+                     <h2>Peugeot AR Motors - Group 1</h2>
+                     <p>Mussum Ipsum, cacilds vidis litro abertis. Si num tem leite então bota uma pinga aí cumpadi! Nec
+                        orci
+                        ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis. Leite de
+                        capivaris, leite de
+                        mula manquis sem cabeça. Manduma pindureta quium dia nois paga.</p>
+                  </article>
+               </div>
+               <div class="line">
+                  <img src="honda.jpg" alt="peugeot">
+                  <article>
+                     <h2>Peugeot AR Motors - Group 1</h2>
+                     <p>Mussum Ipsum, cacilds vidis litro abertis. Si num tem leite então bota uma pinga aí cumpadi! Nec
+                        orci
+                        ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis. Leite de
+                        capivaris, leite de
+                        mula manquis sem cabeça. Manduma pindureta quium dia nois paga.</p>
+                  </article>
+               </div>
+            </div>
          </div>
-         <div>
-            <h4>Honda Andre Ribeiro - Group 1</h4>
-            <p></p>
-         </div>
+
+
+
+
       </div>
    </div>
 
-   <div  style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+   <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
       <h3 style="text-align:center;">When he learned that?</h3>
 
       <div class="container">
@@ -284,7 +381,8 @@
       </div>
    </div>
 
-   <div style="color: #777;background-color: rgba(229, 226, 226, 0.795);text-align:center;padding:50px 80px;text-align: justify;">
+   <div
+      style="color: #777;background-color: rgba(229, 226, 226, 0.795);text-align:center;padding:50px 80px;text-align: justify;">
       <h3 style="text-align:center;">What he belives?</h3>
       <p> Lista de palavras chaves e links do que eu acredito
 
