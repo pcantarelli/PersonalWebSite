@@ -1,60 +1,59 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-   <style>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
       body,
       html {
-         height: 100%;
-         margin: 0;
-         font: 400 15px/1.8 "Lato", sans-serif;
-         color: white;
+        height: 100%;
+        margin: 0;
+        font: 400 15px/1.8 "Lato", sans-serif;
+        color: white;
       }
 
       .bgimg-1 {
-         position: relative;
-         opacity: 0.65;
-         background-attachment: fixed;
-         background-position: left;
-         background-repeat: no-repeat;
-         background-size: cover;
-         background-image: url("pic1.jpg");
-         min-height: 100%;
+        position: relative;
+        opacity: 0.65;
+        background-attachment: fixed;
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url("pic1.jpg");
+        min-height: 100%;
       }
 
       .caption {
-         position: absolute;
-         left: 0;
-         top: 50%;
-         width: 100%;
-         text-align: center;
-         color: #000;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 100%;
+        text-align: center;
+        color: #000;
       }
 
       .caption span.border {
-         background-color: #111;
-         color: #fff;
-         padding: 18px;
-         letter-spacing: 5px;
-         font: 30px "Lato", sans-serif;
+        background-color: #111;
+        color: #fff;
+        padding: 18px;
+        letter-spacing: 5px;
+        font: 30px "Lato", sans-serif;
       }
 
       h3 {
-         letter-spacing: 5px;
-         text-transform: uppercase;
-         font: 20px "Lato", sans-serif;
-         color: #111;
-         margin-bottom:30px;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        font: 20px "Lato", sans-serif;
+        color: #111;
+        margin-bottom: 30px;
       }
 
       img {
-         display: block;
-         max-width: 100%;
-         width: 100%;
-         border-radius: 20px;
-         margin-bottom: 10px;
-         margin-top: 20px;
+        display: block;
+        max-width: 100%;
+        width: 100%;
+        border-radius: 20px;
+        margin-bottom: 10px;
+        margin-top: 20px;
       }
 
       article {
@@ -64,339 +63,381 @@
         padding: 0px;
         margin-bottom: 25px;
         margin-top: 20px;
-
       }
 
       article h2 {
-          padding: 0px;
-          margin: 0px
-          
+        padding: 0px;
+        margin: 0px;
       }
       article p {
-          padding: 0px;
-          margin: 0px 0px 10px ;
+        padding: 0px;
+        margin: 0px 0px 10px;
       }
-
-    
 
       .containermaster {
-         margin: 0 auto 0 auto ;
+        margin: 0 auto 0 auto;
       }
 
+      .believe h2 {
+        text-align: center;
+        color: #807570;
+      }
+
+      .believe h2:hover {
+        color: #be7758;
+      }
+
+      .believe p {
+        display: none;
+      }
 
       @media only screen and (min-width: 768px) {
+        .containermaster {
+          width: 100%;
+          max-width: 800px;
+          margin: 0 auto 0 auto;
+        }
 
-         .containermaster {
-            width: 100%;
-            max-width: 800px;
-            margin: 0 auto 0 auto;
-         }
+        div.line {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          height: 220px;
+          margin: 0 auto 0 auto;
+          padding: 0px;
+        }
 
-         div.line {
-            width: 100%;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            height: 220px;
-            margin: 0 auto 0 auto;
-            padding: 0px;
-         }
+        img {
+          height: 200px;
+          width: 40%;
+          object-fit: cover;
+        }
 
-         img {
-            height: 200px;
-            width: 40%;
-            object-fit: cover;
-
-         }
-
-         article {
-            height: 200px;
-            background-color: #2bc5a;
-            text-align: justify;
-            border: solid #00000;
-            padding: 0px 10px;
-
-         }
-
-
-
+        article {
+          height: 200px;
+          background-color: #2bc5a;
+          text-align: justify;
+          border: solid #00000;
+          padding: 0px 10px;
+        }
       }
-
 
       /*CSS time line*/
       * {
-         -webkit-box-sizing: border-box;
-         -moz-box-sizing: border-box;
-         box-sizing: border-box;
-         outline: none;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        outline: none;
       }
 
       body {
-         margin: 0;
-         padding: 30px 0;
-         font-family: 'Roboto', sans-serif;
-         background: #F1F2F6;
+        margin: 0;
+        padding: 30px 0;
+        font-family: "Roboto", sans-serif;
+        background: #f1f2f6;
       }
 
       h1 {
-         text-align: center;
-         font-weight: 300;
-         color: #777
+        text-align: center;
+        font-weight: 300;
+        color: #777;
       }
 
       h1 span {
-         font-weight: 600;
+        font-weight: 600;
       }
 
       .container {
-         width: 80%;
-         padding: 50px 0;
-         margin: 50px auto;
-         position: relative;
-         overflow: hidden;
+        width: 80%;
+        padding: 50px 0;
+        margin: 50px auto;
+        position: relative;
+        overflow: hidden;
       }
 
       .container:before {
-         content: '';
-         position: absolute;
-         top: 0;
-         left: 50%;
-         margin-left: -1px;
-         width: 2px;
-         height: 100%;
-         background: #CCD1D9;
-         z-index: 1
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 50%;
+        margin-left: -1px;
+        width: 2px;
+        height: 100%;
+        background: #ccd1d9;
+        z-index: 1;
       }
 
       .timeline-block {
-         width: -webkit-calc(50% + 8px);
-         width: -moz-calc(50% + 8px);
-         width: calc(50% + 8px);
-         display: -webkit-box;
-         display: -webkit-flex;
-         display: -moz-box;
-         display: flex;
-         -webkit-box-pack: justify;
-         -webkit-justify-content: space-between;
-         -moz-box-pack: justify;
-         justify-content: space-between;
-         clear: both;
+        width: -webkit-calc(50% + 8px);
+        width: -moz-calc(50% + 8px);
+        width: calc(50% + 8px);
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: flex;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -moz-box-pack: justify;
+        justify-content: space-between;
+        clear: both;
       }
 
       .timeline-block-right {
-         float: right;
+        float: right;
       }
 
       .timeline-block-left {
-         float: left;
-         direction: rtl
+        float: left;
+        direction: rtl;
       }
 
       .marker {
-         width: 16px;
-         height: 16px;
-         border-radius: 50%;
-         border: 2px solid #F5F7FA;
-         background: #2b9c5a;
-         margin-top: 10px;
-         z-index: 9999
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        border: 2px solid #f5f7fa;
+        background: #2b9c5a;
+        margin-top: 10px;
+        z-index: 9999;
       }
 
       .timeline-content {
-         width: 95%;
-         padding: 0 15px;
-         color: #666;
-         text-align: start;
+        width: 95%;
+        padding: 0 15px;
+        color: #666;
+        text-align: start;
       }
 
       .timeline-content h3 {
-         margin-top: 5px;
-         margin-bottom: 5px;
-         font-size: 17px;
-         font-weight: bold;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        font-size: 17px;
+        font-weight: bold;
       }
 
       .timeline-content span {
-         font-size: 15px;
-         color: #666;
-         font-weight: bold;
+        font-size: 15px;
+        color: #666;
+        font-weight: bold;
       }
 
       .timeline-content a {
-         font-size: 15px;
-         color: #000;
-         text-decoration: none;
+        font-size: 15px;
+        color: #000;
+        text-decoration: none;
       }
 
       .timeline-content p {
-         font-size: 14px;
-         line-height: 0.5em;
-         word-spacing: 1px;
-         color: #888;
+        font-size: 14px;
+        line-height: 0.5em;
+        word-spacing: 1px;
+        color: #888;
       }
 
       @media screen and (max-width: 768px) {
-         .container:before {
-            left: 8px;
-            width: 2px;
-         }
+        .container:before {
+          left: 8px;
+          width: 2px;
+        }
 
-         .timeline-block {
-            width: 100%;
-            margin-bottom: 30px;
-         }
+        .timeline-block {
+          width: 100%;
+          margin-bottom: 30px;
+        }
 
-         .timeline-block-right {
-            float: none;
-         }
+        .timeline-block-right {
+          float: none;
+        }
 
-         .timeline-block-left {
-            float: none;
-            direction: ltr;
-         }
+        .timeline-block-left {
+          float: none;
+          direction: ltr;
+        }
       }
       /* Turn off parallax scrolling for tablets and phones */
       @media only screen and (max-device-width: 1024px) {
-         .bgimg-1 {
-            background-attachment: scroll;
-         }
+        .bgimg-1 {
+          background-attachment: scroll;
+        }
       }
-   </style>
-</head>
+    </style>
+  </head>
 
-<body>
-   <div class="bgimg-1">
+  <body>
+    <div class="bgimg-1">
       <div class="caption">
-         <span class="border" style="background-color: transparent">Hi, looking for me?</span>
+        <span class="border" style="background-color: transparent"
+          >Hi, looking for me?</span
+        >
       </div>
-   </div>
+    </div>
 
-   <div style="color: #777;background-color:white;text-align:center;padding:30px 30px 30px 30px;text-align: justify;">
+    <div
+      style="color: #777;background-color:white;text-align:center;padding:30px 30px 30px 30px;text-align: justify;"
+    >
       <h3 style="text-align:center;">Who is this guy?</h3>
-      <p class="containermaster"> Born in Brazil and graduated in Industrial Engineering, I worked 8 years in the
-         Automotive
-         Industry mainly with Sales and Management.
-         <br>
-         <br> Coaching my team, we built long-lasting customer relationships, improved our sales process and achieved
-         customer satisfaction and sales targets that I'm very proud.
+      <p class="containermaster">
+        Born in Brazil and graduated in Industrial Engineering, I worked 8 years
+        in the Automotive Industry mainly with Sales and Management.
+        <br />
+        <br />
+        Coaching my team, we built long-lasting customer relationships, improved
+        our sales process and achieved customer satisfaction and sales targets
+        that I'm very proud. After achieved many of my professional goals, I
+        decided to move to another country and invest some time on me.
+        <br />
+        <br />
+        I studied in Australia for 4 year to improve my Managing Skills and now
+        moved to Ireland due to my dual citizenship (Brazilian and Italian) to
+        focus again on my career.
+      </p>
+    </div>
 
-         After achieved many of my professional goals, I decided to move to another country and invest some time on me.
-         <br>
-         <br> I studied in Australia for 4 year to improve my Managing Skills and now moved to Ireland due to my dual
-         citizenship (Brazilian and Italian) to focus again on my career.</p>
-   </div>
-
-   <div
-      style=" color: #777;background-color:rgba(229, 226, 226, 0.795);text-align:center;padding:30px 30px 30px 30px;text-align: justify;">
+    <div
+      style=" color: #777;background-color:rgba(229, 226, 226, 0.795);text-align:center;padding:30px 30px 30px 30px;text-align: justify;"
+    >
       <h3 style="text-align:center;">Where have him being?</h3>
       <div class="containermaster">
-         <div>
-            <div class="columm">
-               <div class="line">
-                  <img src="byronatbyron.jpg" alt="peugeot">
-                  <article>
-                     <h2>Peugeot AR Motors - Group 1</h2>
-                     <p>Mussum Ipsum, cacilds vidis litro abertis. Si num tem leite então bota uma pinga aí cumpadi! Nec
-                        orci
-                        ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis. Leite de
-                        capivaris, leite de
-                        mula manquis sem cabeça. Manduma pindureta quium dia nois paga.</p>
-                  </article>
-               </div>
-               <div class="line">
-                  <img src="peugeot.jpg" alt="peugeot">
-                  <article>
-                     <h2>Peugeot AR Motors - Group 1</h2>
-                     <p>Mussum Ipsum, cacilds vidis litro abertis. Si num tem leite então bota uma pinga aí cumpadi! Nec
-                        orci
-                        ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis. Leite de
-                        capivaris, leite de
-                        mula manquis sem cabeça. Manduma pindureta quium dia nois paga.</p>
-                  </article>
-               </div>
-               <div class="line">
-                  <img src="honda.jpg" alt="peugeot">
-                  <article>
-                     <h2>Peugeot AR Motors - Group 1</h2>
-                     <p>Mussum Ipsum, cacilds vidis litro abertis. Si num tem leite então bota uma pinga aí cumpadi! Nec
-                        orci
-                        ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis. Leite de
-                        capivaris, leite de
-                        mula manquis sem cabeça. Manduma pindureta quium dia nois paga.</p>
-                  </article>
-               </div>
+        <div>
+          <div class="columm">
+            <div class="line">
+              <img src="byronatbyron.jpg" alt="peugeot" />
+              <article>
+                <h2>Peugeot AR Motors - Group 1</h2>
+                <p>
+                  Mussum Ipsum, cacilds vidis litro abertis. Si num tem leite
+                  então bota uma pinga aí cumpadi! Nec orci ornare consequat.
+                  Praesent lacinia ultrices consectetur. Sed non ipsum felis.
+                  Leite de capivaris, leite de mula manquis sem cabeça. Manduma
+                  pindureta quium dia nois paga.
+                </p>
+              </article>
             </div>
-         </div>
-
-
-
-
+            <div class="line">
+              <img src="peugeot.jpg" alt="peugeot" />
+              <article>
+                <h2>Peugeot AR Motors - Group 1</h2>
+                <p>
+                  Mussum Ipsum, cacilds vidis litro abertis. Si num tem leite
+                  então bota uma pinga aí cumpadi! Nec orci ornare consequat.
+                  Praesent lacinia ultrices consectetur. Sed non ipsum felis.
+                  Leite de capivaris, leite de mula manquis sem cabeça. Manduma
+                  pindureta quium dia nois paga.
+                </p>
+              </article>
+            </div>
+            <div class="line">
+              <img src="honda.jpg" alt="peugeot" />
+              <article>
+                <h2>Peugeot AR Motors - Group 1</h2>
+                <p>
+                  Mussum Ipsum, cacilds vidis litro abertis. Si num tem leite
+                  então bota uma pinga aí cumpadi! Nec orci ornare consequat.
+                  Praesent lacinia ultrices consectetur. Sed non ipsum felis.
+                  Leite de capivaris, leite de mula manquis sem cabeça. Manduma
+                  pindureta quium dia nois paga.
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
       </div>
-   </div>
+    </div>
 
-   <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+    <div
+      style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;"
+    >
       <h3 style="text-align:center;">When he learned that?</h3>
 
       <div class="container">
+        <div class="timeline-block timeline-block-right">
+          <div class="marker"></div>
+          <div class="timeline-content">
+            <h3>2015</h3>
+            <span>Bachelors in Industrial Engineering</span>
+            <a href="https://portal.fei.edu.br/"><br />FEI University</a>
+            <p>São Paulo, Brazil</p>
+          </div>
+        </div>
 
-         <div class="timeline-block timeline-block-right">
-            <div class="marker"></div>
-            <div class="timeline-content">
-               <h3>2015</h3>
-               <span>Bachelors in Industrial Engineering</span>
-               <a href="https://portal.fei.edu.br/"><br>FEI University</a>
-               <p>São Paulo, Brazil</p>
-            </div>
-         </div>
+        <div class="timeline-block timeline-block-left">
+          <div class="marker"></div>
+          <div class="timeline-content">
+            <h3>2016</h3>
+            <span>Diploma of Leadership and Management</span>
+            <a href="https://envirotech.edu.au/"><br />Envirotech</a>
+            <p>Byron Bay, Australia</p>
+          </div>
+        </div>
 
-         <div class="timeline-block timeline-block-left">
-            <div class="marker"></div>
-            <div class="timeline-content">
-               <h3>2016</h3>
-               <span>Diploma of Leadership and Management</span>
-               <a href="https://envirotech.edu.au/"><br>Envirotech</a>
-               <p>Byron Bay, Australia</p>
-            </div>
-         </div>
+        <div class="timeline-block timeline-block-right">
+          <div class="marker"></div>
+          <div class="timeline-content">
+            <h3>2017</h3>
+            <span>Diploma of Project Management</span>
+            <a href="https://envirotech.edu.au/"><br />Envirotech</a>
+            <p>Gold Coast, Australia</p>
+          </div>
+        </div>
 
-         <div class="timeline-block timeline-block-right">
-            <div class="marker"></div>
-            <div class="timeline-content">
-               <h3>2017</h3>
-               <span>Diploma of Project Management</span>
-               <a href="https://envirotech.edu.au/"><br>Envirotech</a>
-               <p>Gold Coast, Australia</p>
-            </div>
-         </div>
-
-         <div class="timeline-block timeline-block-left">
-            <div class="marker"></div>
-            <div class="timeline-content">
-               <h3>2018</h3>
-               <span>Advanced Diploma of Leadership and Management</span>
-               <a href="https://envirotech.edu.au/"><br>Envirotech</a>
-               <p>Gold Coast, Australia</p>
-            </div>
-         </div>
+        <div class="timeline-block timeline-block-left">
+          <div class="marker"></div>
+          <div class="timeline-content">
+            <h3>2018</h3>
+            <span>Advanced Diploma of Leadership and Management</span>
+            <a href="https://envirotech.edu.au/"><br />Envirotech</a>
+            <p>Gold Coast, Australia</p>
+          </div>
+        </div>
       </div>
-   </div>
+    </div>
 
-   <div
-      style="color: #777;background-color: rgba(229, 226, 226, 0.795);text-align:center;padding:50px 80px;text-align: justify;">
+    <div
+      style="color: #777;background-color: rgba(229, 226, 226, 0.795);text-align:center;padding:50px 80px;text-align: justify;"
+    >
       <h3 style="text-align:center;">What he belives?</h3>
-      <p> Lista de palavras chaves e links do que eu acredito
-
-      </p>
-   </div>
-
-
-
-   <div class="bgimg-1">
-      <div class="caption">
-         <span class="border" style=background-color:transparent;>Why am I waiting to contatc him?</span>
+      <div class="containermaster">
+        <div class="believe">
+          <h2>PEOPLE</h2>
+          <p class="description" id="desc1">
+            Mussum Ipsum, cacilds vidis litro abertis. Si num tem leite então
+            bota uma pinga aí cumpadi! Nec orci ornare consequat. Praesent
+            lacinia ultrices consectetur. Sed non ipsum felis. Leite de
+            capivaris, leite de mula manquis sem cabeça. Manduma pindureta quium
+            dia nois paga.
+          </p>
+        </div>
+        <div class="believe">
+          <h2>LUCKY</h2>
+          <p class="description" id="desc2">
+            Mussum Ipsum, cacilds vidis litro abertis. Si num tem leite então
+            bota uma pinga aí cumpadi! Nec orci ornare consequat. Praesent
+            lacinia ultrices consectetur. Sed non ipsum felis. Leite de
+            capivaris, leite de mula manquis sem cabeça. Manduma pindureta quium
+            dia nois paga.
+          </p>
+        </div>
+        <div class="believe">
+          <h2>EVOLUTION</h2>
+          <p class="description" id="desc3">
+            Mussum Ipsum, cacilds vidis litro abertis. Si num tem leite então
+            bota uma pinga aí cumpadi! Nec orci ornare consequat. Praesent
+            lacinia ultrices consectetur. Sed non ipsum felis. Leite de
+            capivaris, leite de mula manquis sem cabeça. Manduma pindureta quium
+            dia nois paga.
+          </p>
+        </div>
       </div>
-   </div>
+    </div>
 
-</body>
-
+    <div class="bgimg-1">
+      <div class="caption">
+        <span class="border" style="background-color:transparent;"
+          >Why am I waiting to contatc him?</span
+        >
+        <div class="socialmedia"></div>
+      </div>
+    </div>
+  </body>
 </html>
